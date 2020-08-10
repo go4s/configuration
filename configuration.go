@@ -1,5 +1,5 @@
 package configuration
 
-type Configuration = map[interface{}]interface{}
+type Configuration = map[string]interface{}
 
 type Modifier func(Configuration) error
