@@ -28,7 +28,7 @@ func fromEnv() {
 			continue
 		}
 		if strings.HasPrefix(tmp[0], Prefix) {
-			mutable[tmp[0]] = tmp[1]
+            mutable[strings.ReplaceAll(strings.ToLower(tmp[0]))] = tmp[1]
 		}
 	}
 }
